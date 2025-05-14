@@ -1,0 +1,112 @@
+.hero {
+    background-color: #2c3b45;
+    padding-top: clamp(110px, 11.9vw, 150px);
+    min-height: clamp(453px, 59.5vw, 750px);
+    border-bottom: 50px solid #1E92E7;
+    display: flex;
+}
+
+.hero_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.hero__content {
+    padding-top: clamp(25px, 6vw, 75px);
+    flex: 1;
+    padding-right: 85px;
+    margin-bottom: clamp(100px, 15.8vw, 200px);
+
+}
+
+.address {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #1e92e7;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.address::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url('../../images/icons/map-marker-solid.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hero__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: clamp(31px, 4.4vw, 56px);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 46px;
+
+}
+
+.hero_btns {
+    padding-bottom: clamp(100px, 15.8vw, 200px);
+}
+
+.btn {}
+
+.btn--primary {}
+
+.hero__btn {}
+
+.hero_image {
+    position: relative;
+    flex: 1;
+    text-align: center;
+
+}
+
+.hero__pic {
+
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+    z-index: 20;
+    position: relative;
+}
+
+.hero_image::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../images/bg/sky.jpg');
+    position: absolute;
+    z-index: 9;
+    border-radius: 5px 0 0 0;
+}
+
+.hero_image::after {
+    content: "";
+    display: block;
+    top: -15px;
+    left: 30px;
+    height: 100;
+    width: 50vw;
+    background-color: #404f59;
+    z-index: 8;
+    position: absolute;
+    border-radius: 5px 0 0 0;
+}
+
+.burger {
+    display: none;
+}

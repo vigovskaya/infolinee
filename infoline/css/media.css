@@ -1,0 +1,29 @@
+@media (max-width: 900px) {
+    .container {
+        width: 93%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header {
+        background-color: #404f59;
+        border-radius: 0 0 10px 10px;
+        padding: 16px 0;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .header__nav-list {
+        display: none;
+    }
+
+
+    .burger {
+        display: block;
+    }
+
+}
+
+@media (max-width: 580px) {}
